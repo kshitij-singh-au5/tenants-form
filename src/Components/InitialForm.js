@@ -20,7 +20,7 @@ const InitialForm = () => {
     return (
         <div style={{ display: 'grid', justifyContent: 'center', marginTop: '200px' }}>
             <div style={{ fontSize: '25px', marginLeft: '180px' }}><b>Add Tenants</b></div>
-            //Select Dropdown component
+            {/* Select Dropdown component */}
             <FormControl>
                 <InputLabel id="demo-controlled-open-select-label">Select Unit</InputLabel>
                 <Select value={value1} onChange={handleChange} style={{ width: '500px' }}>

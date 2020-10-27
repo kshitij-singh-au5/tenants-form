@@ -73,7 +73,7 @@ const FirstForm = () => {
 
             <div style={{ display: 'flex', justifyContent: 'center', fontSize: '25px', marginTop: '100px' }}><b>Tenant Details</b></div>
 
-            //component render when data is coming from localstorage when we go back to previous page
+            {/* component render when data is coming from localstorage when we go back to previous page */}
             {arr && arr.length > 0
                 ?
                 arr.map((ele, i) => {
@@ -105,7 +105,7 @@ const FirstForm = () => {
             }
 
 
-            //normal component render
+            {/* normal component render */}
             {a && a.map((ele, i) => {
                 return (
                     <div style={{ marginLeft: '300px' }}>
@@ -136,7 +136,7 @@ const FirstForm = () => {
                 )
             })}
 
-            //Add roommates button 
+            {/* Add roommates button  */}
             {firstname && lastname && email && phone ?
                 <Button variant="outlined" size="large" style={{ color: 'purple', width: '830px', marginLeft: '329px' }} onClick={() => { handleClick() }}><b>+  ADD ROOMMATES</b></Button>
                 :
@@ -145,7 +145,7 @@ const FirstForm = () => {
 
 
 
-            //Next page button
+            {/* Next page button */}
             {firstname && lastname && email && phone || ok ?
                 <Link to='/2'>
                     <div>
